@@ -5,15 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
     <title>Lucky Birthday?</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Birthday..
-        </h1>
-    </header>
+    <div class="root-el">
+        <header>
+            <h1>
+                Is your birthday lucky or not?
+            </h1>
+        </header>
+        <main class="container">
+            <form>
+                <label class="input-label" for="date-of-birth">Date Of Birth:</label>
+                <input class="input" type="date" id="date-of-birth" />
+
+                <label class="input-label" for="lucky-number">Lucky Number: </label>
+                <input class="input" type="number" id="lucky-number" placeholder="Enter a number" />
+
+                <button id="calculate-number">Check Number</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </form>
+            <div class="lucky">
+                <div class="lucky-animation">🍀</div>
+                <div class="lucky-animation">🍀</div>
+                <div class="lucky-animation">🍀</div>
+                <span>LUCKY HOOMAN!!</span>
+                <div class="lucky-animation-reverse">🍀</div>
+                <div class="lucky-animation-reverse">🍀</div>
+                <div class="lucky-animation-reverse">🍀</div>
+            </div>
+            <p id="output-container"> </p>
+
+        </main>
+        <!-- Modal content -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Privacy Policy</h2>
+                </div>
+                <div class="modal-body">
+                    <p>We have strict policy on how we handle our users data</p>
+                    <ul>
+                        <li>Data entered by the user will not be stored.</li>
+                        <li>The data you enter will be strictly used for the functionality
+                            of the application and it will be erased immediately after clicked on the reset button or
+                            when
+                            application is refreshed.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>For any more concerns please contact us.</h3>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <button id="openPolicyBtn">Privacy Policy</button>
+            &copy; | 2022 | <a href="https://muralidhar-portfolio.netlify.app/" target="_blank">Muralidhar</a>
+        </footer>
+    </div>
     <script src="./app.js"></script>
 </body>
 
