@@ -6,3 +6,5 @@ This website tells whether your Birthday is lucky or not, by calculating whether
 - HTML
 - CSS
 - Javascript
+## Live
+[Live site](https://muralidhar22.github.io/neogcamp-mark11/), Hosted using github pages.
